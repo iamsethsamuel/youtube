@@ -1,6 +1,9 @@
 import styles from './page.module.css';
+import Comp from './Comp';
+import Link from 'next/link';
 
 export default async function Index() {
+  console.log("Hey YouTube NextJS App")
   /*
    * Replace the elements below with your own.
    *
@@ -12,11 +15,12 @@ export default async function Index() {
         <div className="container">
           <div id="welcome">
             <h1>
-              <span> Hello there, </span>
+              <span style={{color: "green "}} className='bg-black'> Hello there,</span>
               Welcome next-app 👋
             </h1>
           </div>
-
+          <Comp />
+          <Link href='/about'>Go to About</Link>
           <div id="hero" className="rounded">
             <div className="text-container">
               <h2>

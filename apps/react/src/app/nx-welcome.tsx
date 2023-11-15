@@ -1,3 +1,5 @@
+import { Components } from "@youtube/components";
+
 /*
  * * * * * * * * * * * * * * * * * * * * * * * * * * * *
  This is a starter component and can be deleted.
@@ -422,6 +424,7 @@ export function NxWelcome({ title }: { title: string }) {
               Welcome {title} 👋
             </h1>
           </div>
+          <Components />
 
           <div id="hero" className="rounded">
             <div className="text-container">
